@@ -7,6 +7,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EnderecoDTO {
+
+    private Long id;
     private String rua;
     private Long numero;
     private String complemento;
