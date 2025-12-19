@@ -60,7 +60,7 @@ public class UsuarioController {
 
     @PutMapping("/telefone")
     public ResponseEntity<TelefoneDTO> atualizarTelefone(@RequestBody TelefoneDTO telefoneDTO,
-                                                         @RequestParam Long id) {
+                                                         @RequestParam("id") Long id) {
         return ResponseEntity.ok(usuarioService.atualizarTelefone(id, telefoneDTO));
     }
 
